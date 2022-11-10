@@ -2,9 +2,9 @@
   "name": "discordjs-template-bot",
   "version": "6.9",
   "description": "A simple event handler and slash commands for your server!",
-  "main": "src/index.js",
+  "main": "src/client.js",
   "scripts": {
-     "start": "node src/index.js"
+     "start": "node src/client.js"
   },
   
   "keywords": [
