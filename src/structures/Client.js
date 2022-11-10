@@ -75,7 +75,6 @@ module.exports = class DiscordBotTemPlate extends Client {
   }
 
   loadCommands() {
-    
     const data = [];
     let i = 0;
     const commandsFolder = readdirSync('./src/commands/');
@@ -87,8 +86,10 @@ module.exports = class DiscordBotTemPlate extends Client {
         const f = require(`../commands/${category}/${command}`);
         const cmd = new f(this, f);
         cmd.category = category;
+        cmd.file = f;
+        cmd.fileName = f.name;
+        this.commands.set(cmd.name, cmd);
         
-        if (cmd.slashCommand) {
           data.push({
             name: cmd.name,
             description: cmd.description,
