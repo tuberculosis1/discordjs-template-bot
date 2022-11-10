@@ -74,10 +74,7 @@ module.exports = class Context {
          * @type {Collection<?string, import("discord.js").AttachmentData>}
          */
         this.attachments = ctx.attachments;
-        /**
-         * @type {import('discord.js').MessageEmbed[]}
-         */
-        this.paginates = paginate;
+        
     }
     /**
      *
