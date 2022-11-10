@@ -6,8 +6,6 @@
       "paths": {
         "@root/*": ["./*"],
         "@src/*": ["./src/*"],
-        "@utils/*": ["./src/utils/*"],
-        "@handlers/*": ["./src/handlers/*"],
         "@structures/*": ["./src/structures/*"]
       }
     },
